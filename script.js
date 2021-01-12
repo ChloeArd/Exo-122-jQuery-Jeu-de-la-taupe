@@ -18,13 +18,13 @@ function startGame() {
 // Lorqu'on clique sur une taupe le score augmente de 1 a chaque fois
 moles.click(function () {
     $(this).each(function (){
+        $(trouHasard).removeClass("up");
         trouHasard = holes[Math.floor(Math.random() * holes.length)];
         score++;
         scoreBoard.html(score);
         setInterval(function () {
             startGame();
         },intervalTempsHasard);
-        $(trouHasard).removeClass("up");
     })
 })
 

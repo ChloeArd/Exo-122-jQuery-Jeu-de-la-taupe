@@ -5,7 +5,7 @@ const moles = $(".mole");
 
 // mettre 10s
 $("#startGame").click(function (){
-    startGame();
+        startGame();
 })
 
 let trouHasard = holes[Math.floor(Math.random() * holes.length)];

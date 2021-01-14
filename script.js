@@ -7,7 +7,6 @@ let intervalTempsHasard = Math.random() * (1000 - 200) + 200;
 
 $("#startGame").click(function (){
         startGame();
-
 })
 
 function startGame() {
@@ -28,8 +27,6 @@ function startGame() {
         location.reload();
     }, 10000)
 }
-
-// Lorqu'on clique sur une taupe le score augmente de 1 a chaque fois
 
 
 
